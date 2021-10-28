@@ -5,17 +5,17 @@ import blueOmega from '../../images/blue.png';
 import { useEffect, useState } from 'react';
 
 const Testimonial = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState('');
   useEffect(() => {
     window.onresize = () => {
       setWindowWidth(window.innerWidth);
     };
     return () => {};
-  }, [window.innerWidth]);
+  }, []);
   return (
-    <div className='text-primary padding paddingy'>
+    <div className='responsive text-primary padding paddingy'>
       <h3 className='text-secondary mb-10 font-bold '>Testimonial</h3>
-      <h1 className='text-3xl font-bold'>Honest Review of Our Customers</h1>
+      <h1 className='text-3xl font-bold md:text-5xl'>Honest Review of Our Customers</h1>
       <p className='my-8 text-[#AAAAAA]'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet
         repudiandae impedit, debitis velit consectetur quos veritatis minus

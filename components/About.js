@@ -6,7 +6,7 @@ import Button from './ui/Button';
 
 function About() {
   return (
-    <div className='padding paddingy text-primary flex flex-col justify-center lg:flex-row'>
+    <div className='responsive padding paddingy text-primary flex flex-col justify-center lg:flex-row'>
       <Image src={greenOmega} objectFit='contain' />
       <div className='lg:ml-20 lg:flex-auto'>
         <h3 className='text-secondary my-10 font-bold'>About Us</h3>

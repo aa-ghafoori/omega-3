@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const Faq = () => {
   return (
-    <div className='padding paddingy text-center'>
+    <div className='responsive padding paddingy text-center'>
       <h3 className='text-secondary mb-10 font-bold '>FAQ</h3>
-      <h1 className='text-3xl font-bold text-primary'>
+      <h1 className='text-3xl font-bold text-primary md:text-5xl'>
         Frequently Asked Questions
       </h1>
       <p className='my-8 text-[#AAAAAA] max-w-xl m-auto'>

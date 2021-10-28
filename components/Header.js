@@ -33,43 +33,62 @@ const Header = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full z-20'>
-      <div className={`bg-primary text-white flex flex-row-reverse justify-between px-4 py-2 ${!show && 'hidden'}`}>
-        <div className='flex justify-between w-1/2 max-w-[10rem]'>
-          <Link href='/'>
-            <a className='hover-item'>
-              <FontAwesomeIcon icon={faFacebookF} />
-            </a>
-          </Link>
-          <Link href='/'>
-            <a className='hover-item'>
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </Link>
-          <Link href='/'>
-            <a className='hover-item'>
-              <FontAwesomeIcon icon={faYoutube} />
-            </a>
-          </Link>
-          <Link href='/'>
-            <a className='hover-item'>
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </Link>
+      <div className='bg-primary'>
+        <div
+          className={`responsive text-white flex flex-row-reverse justify-between px-4 py-2 ${
+            !show && 'hidden'
+          }`}
+        >
+          <div className='flex justify-between w-1/2 max-w-[10rem]'>
+            <Link href='/'>
+              <a className='hover-item'>
+                <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='hover-item'>
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='hover-item'>
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='hover-item'>
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className='flex justify-between items-center px-4 py-2 bg-white shadow-lg'>
-        <div className='relative w-28 h-8 lg:w-40'>
-          <Link href='/'>
-            <a>
-              <Image layout='fill' src={logo} objectFit='contain' />
-            </a>
-          </Link>
+      <div className='bg-white shadow-lg'>
+        <div className='responsive flex justify-between items-center px-4 py-2'>
+          <div className='relative w-28 h-8 lg:w-40'>
+            <Link href='/'>
+              <a>
+                <Image layout='fill' src={logo} objectFit='contain' />
+              </a>
+            </Link>
+          </div>
+          <FontAwesomeIcon
+            icon={faBars}
+            className='text-xl cursor-pointer lg:hidden'
+            onClick={navClickHandler}
+          />
+          <div className='text-[#05453A] hidden lg:block'>
+            <Link href='/'>
+              <a className='text-lg hover-item'>Home</a>
+            </Link>
+            <Link href='/'>
+              <a className='text-lg hover-item mx-10'>About Us</a>
+            </Link>
+            <Link href='/'>
+              <a className='text-lg hover-item'>News</a>
+            </Link>
+          </div>
         </div>
-        <FontAwesomeIcon
-          icon={faBars}
-          className='text-xl'
-          onClick={navClickHandler}
-        />
       </div>
       <Navbar />
     </div>
@@ -77,17 +96,3 @@ const Header = () => {
 };
 
 export default Header;
-
-{
-  /* <div className='text-[#05453A]'>
-        <Link href='/'>
-          <a className='text-lg hover-item'>Home</a>
-        </Link>
-        <Link href='/'>
-          <a className='text-lg hover-item mx-10'>About Us</a>
-        </Link>
-        <Link href='/'>
-          <a className='text-lg hover-item'>News</a>
-        </Link>
-      </div> */
-}

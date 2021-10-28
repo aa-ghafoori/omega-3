@@ -29,7 +29,7 @@ body {
 }
 
 .responsive {
-  @apply md:max-w-3xl lg:max-w-7xl;
+  @apply max-w-7xl lg:m-auto;
 }
 
 .padding {
@@ -37,5 +37,13 @@ body {
 }
 
 .paddingy {
-  @apply py-10
+  @apply py-10;
+}
+
+.no-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }

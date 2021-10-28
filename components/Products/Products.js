@@ -3,10 +3,10 @@ import blueOmega from '../../images/blue.png';
 
 const Products = () => {
   return (
-    <div className='text-center paddingy'>
+    <div className='responsive text-center paddingy'>
       <h3 className='text-secondary font-bold'>Products</h3>
-      <h1 className='text-3xl font-bold text-primary my-10'>Our Products</h1>
-      <div className='flex p-3 overflow-scroll'>
+      <h1 className='text-3xl font-bold text-primary my-10 md:text-5xl'>Our Products</h1>
+      <div className='flex p-3 overflow-x-scroll'>
         <Product
           image={blueOmega}
           title='Algae oil capsule DHA & EPA'

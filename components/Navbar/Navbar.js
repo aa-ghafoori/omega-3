@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-primary text-white padding h-screen w-11/12 shadow-lg fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out
+      className={`bg-primary text-white padding h-screen w-11/12 shadow-lg fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out lg:hidden
         ${!state.navOpen ? '-translate-x-full' : 'translate-x-0'}
     `}
     >
@@ -26,7 +26,7 @@ const Navbar = () => {
             </a>
           </Link>
         </div>
-        <FontAwesomeIcon icon={faTimes} onClick={navClickHandler} />
+        <FontAwesomeIcon icon={faTimes} onClick={navClickHandler} className='cursor-pointer hover-item' />
       </div>
       <div className='flex flex-col'>
         <Link href='/'>

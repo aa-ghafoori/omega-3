@@ -10,14 +10,14 @@ import Image from 'next/image';
 
 function Services() {
   return (
-    <div className='text-primary padding paddingy text-center'>
+    <div className='responsive text-primary padding paddingy text-center'>
       <h3 className='text-secondary mb-10 font-bold '>Services</h3>
       <h1 className='text-3xl font-bold md:text-5xl'>Our Services</h1>
       <p className='my-8 text-[#AAAAAA] max-w-xl m-auto'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, soluta?
       </p>
       <div className='lg:flex'>
-        <div className='md:flex md:flex-wrap justify-around items-center flex-auto lg:mr-8 '>
+        <div className='md:grid md:grid-cols-2 items-center gap-x-10 flex-auto lg:mr-8 '>
           <Card2
             icon={faFish}
             title='Fish Oil'

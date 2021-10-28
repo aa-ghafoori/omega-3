@@ -1,8 +1,5 @@
 import { Fragment } from 'react';
 import Header from '../components/Header';
-import omegaImage from '..//images/vitd.png';
-import Image from 'next/image';
-import Button from '../components/ui/Button';
 import Info from '../components/Info';
 import About from '../components/About';
 import WhyUs from '../components/WhyUs';
@@ -12,28 +9,13 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import Faq from '../components/Faq/Faq';
 import News from '../components/News/News';
 import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 export default function Home() {
   return (
     <Fragment>
       <Header />
-      <div className='bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
-        <div className='absolute w-full h-screen z-[-10]'>
-          <Image src={omegaImage} objectFit='cover' layout='fill' />
-        </div>
-        <div className='padding pt-60 pb-40 md:max-w-2xl lg:max-w-4xl'>
-          <h1 className='text-4xl font-bold capitalize md:text-6xl'>
-            Vegetarian Omega-3 fatty acids with the power of fish oil
-          </h1>
-          <p className='my-8'>
-            The most important omega-3 for heart, eyes and brain
-            <br />1 daily dose contains 210 mg DHA and 70 mg EPA
-          </p>
-          <Button href='/' bgColor='bg-secondary' textColor='text-primary'>
-            About Us
-          </Button>
-        </div>
-      </div>
+      <Hero />
       <Info />
       <About />
       <WhyUs />
@@ -43,7 +25,6 @@ export default function Home() {
       <Faq />
       <News />
       <Footer />
-      <Info />
     </Fragment>
   );
 }
