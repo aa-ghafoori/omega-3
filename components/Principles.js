@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Principles = () => {
   return (
-    <div className='padding paddingy text-primary responsive'>
+    <div className='padding paddingy text-tertiary responsive'>
       <h3 className='text-secondary my-10 font-bold'>Our Principles</h3>
       <h3 className='text-2xl my-4 font-bold'>1. Fresh Algea Oil</h3>
       <p className='mb-8'>

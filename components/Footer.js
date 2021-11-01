@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <div className='bg-primary'>
       <div className='responsive padding paddingy text-white'>
-        <div className='md:grid md:grid-cols-6 lg:grid-cols-4 gap-x-8'>
-          <div className='md:col-span-2 lg:col-span-1'>
+        <div className='md:grid md:grid-cols-3 gap-x-20'>
+          <div className='md:col-span-1 lg:col-span-1'>
             <div className='relative w-40 h-16 lg:w-40'>
               <Link href='/'>
                 <a>
@@ -81,38 +81,11 @@ const Footer = () => {
               <a className='mt-2 text-sm hover-item w-[fit-content]'>FAQ</a>
             </Link>
           </div>
-          <div className='md:col-span-2 lg:col-span-1 md:mt-2 flex flex-col mt-8'>
-            <h3 className='text-secondary text-lg font-bold'>Contact Info</h3>
-            <div className='mt-2 text-sm flex items-center'>
-              <FontAwesomeIcon
-                className='mr-4 text-secondary'
-                icon={faMapMarkerAlt}
-              />
-              <span>
-                Jl. Raya Mas Ubud No.88, Gianyar, Bali, Indonesia – 80571
-              </span>
-            </div>
-            <div className='mt-2 text-sm flex items-center'>
-              <FontAwesomeIcon
-                className='mr-4 text-secondary'
-                icon={faPhoneAlt}
-              />
-              <span>+90 512 487 32</span>
-            </div>
-            <div className='mt-2 text-sm flex items-center'>
-              <FontAwesomeIcon
-                className='mr-4 text-secondary'
-                icon={faEnvelope}
-              />
-              <span>omega@example.com</span>
-            </div>
-          </div>
         </div>
-        <div className='py-8 mt-14 border-[#bbbbbb7e] border-t-[1px] bg-primary text-sm text-center flex flex-col md:flex-row justify-around items-center'>
+        <div className='py-8 mt-14 border-[#bbbbbb7e] border-t-[1px] text-sm '>
           <span className='my-4'>
-            Medical Marijuana Template Kit by Jegtheme
+          Copyright © 2021. All rights reserved.
           </span>
-          <span>Copyright © 2021. All rights reserved.</span>
         </div>
       </div>
     </div>

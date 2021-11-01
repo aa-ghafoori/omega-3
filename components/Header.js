@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full z-20'>
-      <div className='bg-primary'>
+      {/* <div className='bg-primary'>
         <div
           className={`responsive text-white flex flex-row-reverse justify-between px-4 py-2 ${
             !show && 'hidden'
@@ -62,9 +62,9 @@ const Header = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className='bg-white shadow-lg'>
-        <div className='responsive flex justify-between items-center px-4 py-2'>
+      </div> */}
+      <div className='bg-white shadow-md'>
+        <div className='max-w-5xl lg:m-auto flex justify-between items-center px-4 py-2'>
           <div className='relative w-28 h-8 lg:w-40'>
             <Link href='/'>
               <a>
@@ -77,7 +77,7 @@ const Header = () => {
             className='text-xl cursor-pointer lg:hidden'
             onClick={navClickHandler}
           />
-          <div className='text-[#05453A] hidden lg:block'>
+          <div className='text-tertiary hidden lg:block'>
             <Link href='/'>
               <a className='text-lg hover-item'>Home</a>
             </Link>

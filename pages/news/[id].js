@@ -89,7 +89,7 @@ const SingleNews = ({ singleNews, data }) => {
                 objectFit='cover'
               />
             </div>
-            <p className='text-[#AAAAAA] mt-6'>{singleNews.body}</p>
+            <p className='text-[#AAAAAA] mt-6 text-tertiary'>{singleNews.body}</p>
           </div>
           <div className='padding paddingy'>
             <h3 className='font-bold my-6'>Share This:</h3>
@@ -102,7 +102,7 @@ const SingleNews = ({ singleNews, data }) => {
           </div>
           <Comment />
         </div>
-        <div className='lg:col-span-1 padding paddingy text-primary'>
+        <div className='lg:col-span-1 padding paddingy text-tertiary'>
           <h1 className='text-3xl font-bold md:text-4xl text-primary mb-6'>
             Featured News
           </h1>
@@ -122,12 +122,12 @@ const SingleNews = ({ singleNews, data }) => {
               </Link>
             );
           })}
-          <div className='paddingy'>
+          <div className='paddingy text-tertiary'>
             <h1 className='text-3xl font-bold md:text-4xl text-primary'>
               Category
             </h1>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'
@@ -136,7 +136,7 @@ const SingleNews = ({ singleNews, data }) => {
               </a>
             </Link>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'
@@ -145,7 +145,7 @@ const SingleNews = ({ singleNews, data }) => {
               </a>
             </Link>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'

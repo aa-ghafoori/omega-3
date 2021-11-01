@@ -9,7 +9,7 @@ const TestimonialCard = ({ image, name, text }) => {
             <Image src={image} className='rounded-full' />
           </div>
           <div>
-            <h2 className='text-2xl font-bold text-primary'>{name}</h2>
+            <h2 className='text-2xl font-bold text-tertiary'>{name}</h2>
             <p className='text-[#AAAAAA] text-sm mt-1'>Customer</p>
           </div>
         </div>

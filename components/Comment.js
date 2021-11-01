@@ -2,10 +2,10 @@ const Comment = () => {
   return (
     <div className='mx-auto padding paddingy text-primary'>
       <h1 className='text-5xl font-bold'>Leave a Reply</h1>
-      <p className='text-[#AAAAAA] my-6'>
+      <p className='text-[#616161] my-6'>
         Your email address will not be published.
       </p>
-      <form>
+      <form onSubmit={e => e.preventDefault()}>
         <div className='mb-6'>
           <label for='comment' className='font-bold block mb-2'>
             Comment
@@ -14,7 +14,7 @@ const Comment = () => {
             id='comment'
             cols='45'
             rows='8'
-            className='bg-gray-50 border border-gray-300 text-[#AAAAAA] sm:text-sm rounded-lg  block w-full p-2.5
+            className='bg-gray-50 border border-gray-300 text-[#616161] sm:text-sm rounded-lg  block w-full p-2.5
             focus:outline-none focus:border-primary'
           />
         </div>
@@ -25,7 +25,7 @@ const Comment = () => {
           <input
             type='text'
             id='name'
-            className='bg-gray-50 border border-gray-300 text-[#AAAAAA] sm:text-sm rounded-lg  block w-full p-2.5
+            className='bg-gray-50 border border-gray-300 text-[#616161] sm:text-sm rounded-lg  block w-full p-2.5
             focus:outline-none focus:border-primary'
           />
         </div>
@@ -36,7 +36,7 @@ const Comment = () => {
           <input
             type='email'
             id='email'
-            className='bg-gray-50 border border-gray-300 text-[#AAAAAA] sm:text-sm rounded-lg  block w-full p-2.5
+            className='bg-gray-50 border border-gray-300 text-[#616161] sm:text-sm rounded-lg  block w-full p-2.5
             focus:outline-none focus:border-primary'
           />
         </div>
@@ -47,7 +47,7 @@ const Comment = () => {
           <input
             type='email'
             id='email'
-            className='bg-gray-50 border border-gray-300 text-[#AAAAAA] sm:text-sm rounded-lg  block w-full p-2.5
+            className='bg-gray-50 border border-gray-300 text-[#616161] sm:text-sm rounded-lg  block w-full p-2.5
             focus:outline-none focus:border-primary'
           />
         </div>
@@ -61,7 +61,7 @@ const Comment = () => {
               required=''
             />
           </div>
-          <div className='text-sm ml-3'>
+          <div className='text-sm ml-3 text-tertiary'>
             <label for='remember' className='font-medium'>
               Save my name, email, and website in this browser for the next time
               I comment.

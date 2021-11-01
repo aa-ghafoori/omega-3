@@ -41,9 +41,9 @@ const About = () => {
       </div>
       <div className='responsive padding paddingy text-primary flex flex-col justify-center'>
         <Image src={greenOmega} objectFit='contain' />
-        <div className=' lg:flex-auto'>
+        <div className=' lg:flex-auto text-tertiary'>
           <h3 className='text-secondary my-10 font-bold'>About Us</h3>
-          <h1 className='text-3xl font-bold md:text-5xl capitalize'>
+          <h1 className='text-3xl font-bold md:text-5xl capitalize text-primary'>
             How do you know if a fish oil is good?
           </h1>
           <p className='my-4'>

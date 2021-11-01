@@ -83,7 +83,7 @@ const News = ({ data }) => {
             return (
               <Link href={'/news/' + news.id.toString()} key={news.id}>
                 <a>
-                  <div className='mt-4'>
+                  <div className='mt-4 text-tertiary'>
                     <h1 className='text-lg font-bold '>{news.title}</h1>
                     <div className='text-[#AAAAAA] flex items-center'>
                       <FontAwesomeIcon icon={faClock} />
@@ -94,12 +94,12 @@ const News = ({ data }) => {
               </Link>
             );
           })}
-          <div className='paddingy'>
+          <div className='paddingy text-tertiary'>
             <h1 className='text-3xl font-bold md:text-4xl text-primary'>
               Category
             </h1>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'
@@ -108,7 +108,7 @@ const News = ({ data }) => {
               </a>
             </Link>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'
@@ -117,7 +117,7 @@ const News = ({ data }) => {
               </a>
             </Link>
             <Link href='/'>
-              <a className='flex items-center text-primary mt-2'>
+              <a className='flex items-center mt-2'>
                 <FontAwesomeIcon
                   icon={faLongArrowAltRight}
                   className='text-[#AAAAAA] mr-2'

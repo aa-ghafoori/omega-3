@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 function Product({ image, title, description, description2 }) {
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg min-w-[18rem] mx-3'>
+    <div className='max-w-xs rounded overflow-hidden shadow-lg min-w-[18rem] mx-3'>
       <Image className='w-full' src={image} />
       <div className='px-6 py-4 text-tertiary'>
         <h2 className='font-bold text-xl mb-2'>{title}</h2>

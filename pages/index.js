@@ -33,9 +33,8 @@ export default function Home({ newsData, faqData }) {
   console.log(faqData);
   return (
     <Layout>
-      <Hero />
-      <Info />
       <AboutUs />
+      <Info />
       <WhyUs />
       <Products />
       <Testimonial />
