@@ -23,7 +23,7 @@ function WhyUs() {
             title='100% Organic'
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo!'
             iconColor='text-secondary'
-            titleColor='text-primary'
+            titleColor='text-tertiary'
             textColor='text-[#AAAAAA]'
           />
           <Card
@@ -31,7 +31,7 @@ function WhyUs() {
             title='Certified Medicine'
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo!'
             iconColor='text-secondary'
-            titleColor='text-primary'
+            titleColor='text-tertiary'
             textColor='text-[#AAAAAA]'
           />
           <Card
@@ -39,7 +39,7 @@ function WhyUs() {
             title='3rd Party Tested'
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo!'
             iconColor='text-secondary'
-            titleColor='text-primary'
+            titleColor='text-tertiary'
             textColor='text-[#AAAAAA]'
           />
           <Card
@@ -47,7 +47,7 @@ function WhyUs() {
             title='Reduce Pain'
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo!'
             iconColor='text-secondary'
-            titleColor='text-primary'
+            titleColor='text-tertiary'
             textColor='text-[#AAAAAA]'
           />
         </div>

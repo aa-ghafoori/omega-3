@@ -16,7 +16,7 @@ const Hero = () => {
           The most important omega-3 for heart, eyes and brain
           <br />1 daily dose contains 210 mg DHA and 70 mg EPA
         </p>
-        <Button href='/' bgColor='bg-secondary' textColor='text-primary'>
+        <Button href='/about' bgColor='bg-secondary' textColor='text-primary'>
           About Us
         </Button>
       </div>

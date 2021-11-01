@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: rgba(5, 69, 58, 1);
+  --color-primary: #70a663;
   --color-secondary: #ffc53c;
+  --color-tertiary: #06453a;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
@@ -46,4 +47,8 @@ body {
 }
 .no-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
+}
+
+.markdown p {
+  @apply mt-4;
 }

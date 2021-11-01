@@ -7,15 +7,18 @@ import { useEffect, useState } from 'react';
 const Testimonial = () => {
   const [windowWidth, setWindowWidth] = useState('');
   useEffect(() => {
+    windowWidth === '' && setWindowWidth(window.innerWidth);
     window.onresize = () => {
       setWindowWidth(window.innerWidth);
     };
     return () => {};
   }, []);
   return (
-    <div className='responsive text-primary padding paddingy'>
+    <div className='responsive text-primary padding paddingy bg-[#f7f7f7] shadow-md'>
       <h3 className='text-secondary mb-10 font-bold '>Testimonial</h3>
-      <h1 className='text-3xl font-bold md:text-5xl'>Honest Review of Our Customers</h1>
+      <h1 className='text-3xl font-bold md:text-5xl'>
+        Honest Review of Our Customers
+      </h1>
       <p className='my-8 text-[#AAAAAA]'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet
         repudiandae impedit, debitis velit consectetur quos veritatis minus

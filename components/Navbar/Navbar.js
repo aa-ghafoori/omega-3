@@ -37,7 +37,7 @@ const Navbar = () => {
             Home
           </a>
         </Link>
-        <Link href='/'>
+        <Link href='/about'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}
@@ -45,7 +45,7 @@ const Navbar = () => {
             About Us
           </a>
         </Link>
-        <Link href='/'>
+        <Link href='/news'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}

@@ -10,8 +10,8 @@ const Question = ({ question, answer }) => {
   return (
     <div onClick={toggleClick} className=''>
       <div
-        className={`border-gray-300 border-[1px] flex justify-between items-center p-4 font-bold ${
-          clicked ? 'bg-primary text-white' : 'text-primary'
+        className={`border-gray-300 border-[1px] flex justify-between items-center p-4 font-bold cursor-pointer ${
+          clicked ? 'bg-primary text-white' : 'text-tertiary'
         }`}
       >
         <p>{question}</p>
@@ -21,12 +21,11 @@ const Question = ({ question, answer }) => {
         />
       </div>
       <div
+        dangerouslySetInnerHTML={{ __html: answer }}
         className={`${
           !clicked ? 'max-h-0 ' : 'max-h-screen'
-        } text-[#AAAAAA] m-4 overflow-hidden transition-all duration-500 ease-in-out text-left`}
-      >
-        {answer}
-      </div>
+        } text-[#AAAAAA] m-4 overflow-hidden transition-all duration-500 ease-in-out text-left markdown`}
+      ></div>
     </div>
   );
 };

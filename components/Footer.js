@@ -56,12 +56,12 @@ const Footer = () => {
             <Link href='/'>
               <a className='mt-2 text-sm hover-item w-[fit-content]'>Home</a>
             </Link>
-            <Link href='/'>
+            <Link href='/about'>
               <a className='mt-2 text-sm hover-item w-[fit-content]'>
                 About Us
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/news'>
               <a className='mt-2 text-sm hover-item w-[fit-content]'>News</a>
             </Link>
           </div>

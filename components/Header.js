@@ -81,10 +81,10 @@ const Header = () => {
             <Link href='/'>
               <a className='text-lg hover-item'>Home</a>
             </Link>
-            <Link href='/'>
+            <Link href='/about'>
               <a className='text-lg hover-item mx-10'>About Us</a>
             </Link>
-            <Link href='/'>
+            <Link href='/news'>
               <a className='text-lg hover-item'>News</a>
             </Link>
           </div>

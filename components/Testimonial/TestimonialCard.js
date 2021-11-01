@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const TestimonialCard = ({ image, name, text }) => {
   return (
-    <div className='p-2'>
+    <div className='p-2 bg-white'>
       <div className='max-w-sm rounded overflow-hidden shadow-lg p-8 m-auto'>
         <div className='flex items-center mb-8'>
           <div className=' h-16 w-16 mr-4'>
