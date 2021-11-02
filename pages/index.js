@@ -11,10 +11,12 @@ import axios from 'axios';
 import markdownToHtml from '../lib/markdownToHtml';
 
 export const getStaticProps = async () => {
-  const res = await axios.get('http://localhost:1337/news/');
+  const res = await axios.get(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news');
   const newsData = res.data;
 
-  const res2 = await axios.get('http://localhost:1337/faqs/');
+  const res2 = await axios.get(
+    process.env.NEXT_PUBLIC_STRAPI_API_URL + '/faqs'
+  );
   const faqData = await Promise.all(
     res2.data.map(async question => {
       const parsed = await markdownToHtml(question.answer);

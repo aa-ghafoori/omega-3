@@ -15,7 +15,7 @@ import Link from 'next/link';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 export const getStaticPaths = async () => {
-  const { data } = await axios.get('http://localhost:1337/news/');
+  const { data } = await axios.get(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news');
   const paths = data.map(news => {
     return { params: { id: news.id.toString() } };
   });
@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const { data } = await axios.get('http://localhost:1337/news/');
+  const { data } = await axios.get(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news');
   console.log(data);
   const singleNews = data.find(news => news.id.toString() === params.id);
   console.log(singleNews);
@@ -82,7 +82,7 @@ const SingleNews = ({ singleNews, data }) => {
           <div className='padding paddingy'>
             <div className='relative h-96'>
               <Image
-                src={'http://localhost:1337' + singleNews.image.url}
+                src={process.env.NEXT_PUBLIC_STRAPI_API_URL + singleNews.image.url}
                 width={singleNews.image.width}
                 height={singleNews.image.height}
                 layout='fill'

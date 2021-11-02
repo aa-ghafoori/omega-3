@@ -11,7 +11,9 @@ import {
 import axios from 'axios';
 
 export const getStaticProps = async () => {
-  const { data } = await axios.get('http://localhost:1337/news/');
+  const { data } = await axios.get(
+    process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news'
+  );
   return {
     props: { data },
   };
@@ -66,7 +68,9 @@ const News = ({ data }) => {
                   category={news.categories[0].name}
                   title={news.title}
                   text={news.body.slice(0, 100) + '...'}
-                  imageUrl={'http://localhost:1337' + news.image.url}
+                  imageUrl={
+                    process.env.NEXT_PUBLIC_STRAPI_API_URL + news.image.url
+                  }
                   imageWidth={news.image.width}
                   imageHeight={news.image.height}
                 />
