@@ -4,7 +4,7 @@ import Image from 'next/image';
 import greenOmega from '../images/green.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowMinimize } from '@fortawesome/free-regular-svg-icons';
-import { faCannabis, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCannabis } from '@fortawesome/free-solid-svg-icons';
 import Principles from '../components/Principles';
 import WhyUs from '../components/WhyUs';
 

@@ -2,7 +2,6 @@ import Button from '../ui/Button';
 import NewsCard from './NewsCard';
 
 const News = ({ data }) => {
-  console.log(data);
 
   return (
     <div className='responsive padding paddingy text-tertiary'>

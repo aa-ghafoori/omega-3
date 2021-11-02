@@ -5,7 +5,6 @@ import Products from '../components/Products/Products';
 import Testimonial from '../components/Testimonial/Testimonial';
 import Faq from '../components/Faq/Faq';
 import News from '../components/News/News';
-import Hero from '../components/Hero';
 import Layout from '../components/ui/Layout';
 import axios from 'axios';
 import markdownToHtml from '../lib/markdownToHtml';
@@ -32,7 +31,6 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ newsData, faqData }) {
-  console.log(faqData);
   return (
     <Layout>
       <AboutUs />
