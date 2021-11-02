@@ -12,11 +12,18 @@ const NewsCard = ({
   text,
   id,
 }) => {
+  console.log(id, imageUrl);
   return (
     <div className='my-4 p-4 shadow-sm '>
       {imageUrl !== null ? (
         <div className='relative  h-80'>
-          <Image width={imageWidth} height={imageHeight} src={imageUrl} objectFit='cover' layout='fill' />
+          <Image
+            width={imageWidth}
+            height={imageHeight}
+            src={imageUrl}
+            objectFit='cover'
+            layout='fill'
+          />
         </div>
       ) : (
         <div></div>

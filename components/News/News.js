@@ -2,7 +2,6 @@ import Button from '../ui/Button';
 import NewsCard from './NewsCard';
 
 const News = ({ data }) => {
-
   return (
     <div className='responsive padding paddingy text-tertiary'>
       <h3 className='text-secondary mb-10 font-bold'>News</h3>
@@ -27,6 +26,7 @@ const News = ({ data }) => {
         {data.slice(0, 2).map(news => {
           return (
             <NewsCard
+              id={news.id.toString()}
               key={news.id.toString()}
               category={news.categories[0].name}
               title={news.title}
@@ -41,6 +41,7 @@ const News = ({ data }) => {
           {data.slice(2, 6).map(news => {
             return (
               <NewsCard
+                id={news.id.toString()}
                 key={news.id.toString()}
                 title={news.title}
                 text={news.body.slice(0, 100) + '...'}

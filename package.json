@@ -24,7 +24,8 @@
     "react-indiana-drag-scroll": "^2.1.0",
     "react-responsive-carousel": "^3.2.22",
     "remark": "^14.0.1",
-    "remark-html": "^15.0.0"
+    "remark-html": "^15.0.0",
+    "sharp": "^0.29.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",

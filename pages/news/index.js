@@ -42,7 +42,7 @@ const News = ({ data }) => {
     const newDate = month + ' ' + day + ',' + ' ' + year;
     return newDate;
   };
-
+console.log(data);
   return (
     <Layout>
       <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
