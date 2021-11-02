@@ -20,7 +20,6 @@ export const getStaticProps = async () => {
 };
 
 const News = ({ data }) => {
-  console.log(data);
   const getDate = date => {
     const months = [
       'January',

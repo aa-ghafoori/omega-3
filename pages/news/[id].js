@@ -27,9 +27,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const { data } = await axios.get(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news');
-  console.log(data);
   const singleNews = data.find(news => news.id.toString() === params.id);
-  console.log(singleNews);
   return {
     props: { singleNews, data },
   };
