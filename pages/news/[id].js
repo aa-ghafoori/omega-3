@@ -80,9 +80,7 @@ const SingleNews = ({ singleNews, data }) => {
           <div className='padding paddingy'>
             <div className='relative h-96'>
               <Image
-                src={process.env.NEXT_PUBLIC_STRAPI_API_URL + singleNews.image.url}
-                width={singleNews.image.width}
-                height={singleNews.image.height}
+                src={'https://res.cloudinary.com/dly5b3ny0/image/upload/v1635931903/green_lfnu3m.png'}
                 layout='fill'
                 objectFit='cover'
               />

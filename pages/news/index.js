@@ -42,7 +42,7 @@ const News = ({ data }) => {
     const newDate = month + ' ' + day + ',' + ' ' + year;
     return newDate;
   };
-console.log(data);
+  console.log(data);
   return (
     <Layout>
       <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
@@ -67,11 +67,7 @@ console.log(data);
                   category={news.categories[0].name}
                   title={news.title}
                   text={news.body.slice(0, 100) + '...'}
-                  imageUrl={
-                    process.env.NEXT_PUBLIC_STRAPI_API_URL + news.image.url
-                  }
-                  imageWidth={news.image.width}
-                  imageHeight={news.image.height}
+                  imageUrl={'https://res.cloudinary.com/dly5b3ny0/image/upload/v1635931903/green_lfnu3m.png'}
                 />
               );
             })}

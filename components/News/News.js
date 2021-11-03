@@ -31,9 +31,7 @@ const News = ({ data }) => {
               category={news.categories[0].name}
               title={news.title}
               text={news.body.slice(0, 100) + '...'}
-              imageUrl={process.env.NEXT_PUBLIC_STRAPI_API_URL + news.image.url}
-              imageWidth={news.image.width}
-              imageHeight={news.image.height}
+              imageUrl={'https://res.cloudinary.com/dly5b3ny0/image/upload/v1635931903/green_lfnu3m.png'}
             />
           );
         })}

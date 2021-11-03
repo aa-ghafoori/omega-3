@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 const NewsCard = ({
   imageUrl,
-  imageWidth,
-  imageHeight,
   category,
   title,
   text,
@@ -18,8 +16,6 @@ const NewsCard = ({
       {imageUrl !== null ? (
         <div className='relative  h-80'>
           <Image
-            width={imageWidth}
-            height={imageHeight}
             src={imageUrl}
             objectFit='cover'
             layout='fill'
