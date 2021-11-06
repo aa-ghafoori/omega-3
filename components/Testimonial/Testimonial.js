@@ -15,10 +15,10 @@ const Testimonial = () => {
   }, []);
   return (
     <div className='responsive text-primary padding paddingy bg-[#f7f7f7] shadow-md'>
-      <h3 className='text-secondary mb-10 font-bold '>Testimonial</h3>
-      <h1 className='text-3xl font-bold md:text-5xl'>
+      <h2 className='text-secondary mb-10 font-bold '>Testimonial</h2>
+      <h2 className='text-3xl font-bold md:text-5xl'>
         Honest Review of Our Customers
-      </h1>
+      </h2>
       <p className='my-8 text-[#AAAAAA]'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet
         repudiandae impedit, debitis velit consectetur quos veritatis minus

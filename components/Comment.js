@@ -7,7 +7,7 @@ const Comment = () => {
       </p>
       <form onSubmit={e => e.preventDefault()}>
         <div className='mb-6'>
-          <label for='comment' className='font-bold block mb-2'>
+          <label htmlFor='comment' className='font-bold block mb-2'>
             Comment
           </label>
           <textarea
@@ -19,7 +19,7 @@ const Comment = () => {
           />
         </div>
         <div className='mb-6'>
-          <label for='name' className='font-bold block mb-2'>
+          <label htmlFor='name' className='font-bold block mb-2'>
             Name
           </label>
           <input
@@ -30,7 +30,7 @@ const Comment = () => {
           />
         </div>
         <div className='mb-6'>
-          <label for='email' className='font-bold block mb-2'>
+          <label htmlFor='email' className='font-bold block mb-2'>
             Email
           </label>
           <input
@@ -41,7 +41,7 @@ const Comment = () => {
           />
         </div>
         <div className='mb-6'>
-          <label for='website' className='font-bold block mb-2'>
+          <label htmlFor='website' className='font-bold block mb-2'>
             Website
           </label>
           <input
@@ -62,7 +62,7 @@ const Comment = () => {
             />
           </div>
           <div className='text-sm ml-3 text-tertiary'>
-            <label for='remember' className='font-medium'>
+            <label htmlFor='remember' className='font-medium'>
               Save my name, email, and website in this browser for the next time
               I comment.
             </label>

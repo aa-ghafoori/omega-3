@@ -4,10 +4,10 @@ import blueOmega from '../../images/blue.png';
 const Products = () => {
   return (
     <div className='responsive text-center paddingy'>
-      <h3 className='text-secondary font-bold'>Products</h3>
-      <h1 className='text-3xl font-bold text-primary my-10 md:text-5xl'>
+      <h2 className='text-secondary font-bold'>Products</h2>
+      <h2 className='text-3xl font-bold text-primary my-10 md:text-5xl'>
         Our Products
-      </h1>
+      </h2>
       <div className='flex p-3 overflow-x-scroll lg:overflow-auto '>
         <Product
           image={blueOmega}

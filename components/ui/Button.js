@@ -4,7 +4,7 @@ const Button = ({ href, bgColor, textColor, children }) => {
   return (
     <Link href={href}>
       <a
-        className={`${bgColor} ${textColor} px-10 py-4 transition rounded hover:bg-green-700 focus:outline-none `}
+        className={`${bgColor} ${textColor} inline-block px-8 py-3 transition rounded hover:bg-[#224919] focus:outline-none `}
       >
         {children}
       </a>

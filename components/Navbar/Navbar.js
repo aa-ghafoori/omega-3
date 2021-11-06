@@ -14,21 +14,33 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-primary text-white padding h-screen w-11/12 shadow-lg fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out lg:hidden
+      className={`bg-primary text-white padding h-screen w-11/12 shadow-md fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out lg:hidden
         ${!state.navOpen ? '-translate-x-full' : 'translate-x-0'}
     `}
     >
       <div className='flex justify-between items-center'>
-        <div className='relative w-40 h-16 lg:w-40' onClick={navClickHandler}>
-          <Link href='/'>
-            <a>
-              <Image layout='fill' src={logoWhite} objectFit='contain' />
-            </a>
-          </Link>
-        </div>
-        <FontAwesomeIcon icon={faTimes} onClick={navClickHandler} className='cursor-pointer hover-item' />
+        <Link href='/'>
+          <a>
+            <div
+              className='relative w-40 h-16 lg:w-40'
+              onClick={navClickHandler}
+            >
+              <Image
+                layout='fill'
+                src={logoWhite}
+                objectFit='contain'
+                alt='Arctic Blue Logo'
+              />
+            </div>
+          </a>
+        </Link>
+        <FontAwesomeIcon
+          icon={faTimes}
+          onClick={navClickHandler}
+          className='cursor-pointer hover-item'
+        />
       </div>
-      <div className='flex flex-col'>
+      <nav className='flex flex-col'>
         <Link href='/'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
@@ -53,7 +65,7 @@ const Navbar = () => {
             News
           </a>
         </Link>
-      </div>
+      </nav>
     </div>
   );
 };

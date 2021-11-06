@@ -11,8 +11,8 @@ import Image from 'next/image';
 function WhyUs() {
   return (
     <div className='responsive text-primary padding paddingy text-center'>
-      <h3 className='text-secondary mb-10 font-bold '>Why Choose Us</h3>
-      <h1 className='text-3xl md:text-5xl font-bold'>Why Choose Us</h1>
+      <h2 className='text-secondary mb-10 font-bold '>Why Choose Us</h2>
+      <h2 className='text-3xl md:text-5xl font-bold'>Why Choose Us</h2>
       <p className='my-8 text-[#AAAAAA] max-w-xl m-auto'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, soluta?
       </p>

@@ -1,65 +1,41 @@
 import Layout from '../../components/ui/Layout';
 import omegaImage from '../../images/vitd.png';
 import Image from 'next/image';
-import Link from 'next/link';
 import NewsCard from '../../components/News/NewsCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faClock,
-  faLongArrowAltRight,
-} from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
-
-export const getStaticProps = async () => {
-  const { data } = await axios.get(
-    process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news'
-  );
-  return {
-    props: { data },
-  };
-};
+import { getAllNews } from '../../lib/api';
+import FeaturedNews from '../../components/News/FeaturedNews';
+import Categories from '../../components/Categories';
+import { NextSeo } from 'next-seo';
 
 const News = ({ data }) => {
-  const getDate = date => {
-    const months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ];
-
-    const month = months[new Date(date).getMonth()];
-    const day = new Date(date).getDay().toString();
-    const year = new Date(date).getFullYear().toString();
-    const newDate = month + ' ' + day + ',' + ' ' + year;
-    return newDate;
-  };
-  console.log(data);
   return (
     <Layout>
+      <NextSeo
+        title='News - Arctic Blue'
+        description='Arctic Blue levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.'
+        canonical='omega-3.vercel.app/news'
+        openGraph={{
+          url: 'omega-3.vercel.app/news',
+          title: 'News - Arctic Blue',
+          description:
+            'Arctic Blue levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.',
+        }}
+      />
       <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
         <div className='absolute h-full w-full z-[-10]'>
-          <Image src={omegaImage} objectFit='cover' layout='fill' />
+          <Image src={omegaImage} objectFit='cover' layout='fill' priority/>
         </div>
         <div className='responsive padding pt-60 pb-40 md:max-w-2xl lg:max-w-4xl m-auto'>
           <h1 className='text-4xl font-bold capitalize md:text-6xl'>News</h1>
         </div>
       </div>
-      <div className='lg:grid lg:grid-cols-3 responsive'>
+      <main className='lg:grid lg:grid-cols-3 responsive'>
         <div className='lg:col-span-2 padding paddingy responsive'>
-          <h1 className='text-3xl font-bold md:text-4xl text-primary'>
+          <h2 className='text-3xl font-bold md:text-4xl text-primary'>
             Latest News
-          </h1>
+          </h2>
           <div className='lg:grid lg:grid-cols-2'>
-            {data.slice(0, 3).map(news => {
+            {data.slice(0, 4).map(news => {
               return (
                 <NewsCard
                   key={news.id.toString()}
@@ -67,68 +43,26 @@ const News = ({ data }) => {
                   category={news.categories[0].name}
                   title={news.title}
                   text={news.body.slice(0, 100) + '...'}
-                  imageUrl={'https://res.cloudinary.com/dly5b3ny0/image/upload/v1635931903/green_lfnu3m.png'}
+                  imageUrl={news.image.url}
                 />
               );
             })}
           </div>
         </div>
-        <div className='lg:col-span-1padding paddingy text-primary'>
-          <h1 className='text-3xl font-bold md:text-4xl text-primary mb-6'>
-            Featured News
-          </h1>
-          {data.slice(3).map(news => {
-            const date = getDate(news.published_at);
-            return (
-              <Link href={'/news/' + news.id.toString()} key={news.id}>
-                <a>
-                  <div className='mt-4 text-tertiary'>
-                    <h1 className='text-lg font-bold '>{news.title}</h1>
-                    <div className='text-[#AAAAAA] flex items-center'>
-                      <FontAwesomeIcon icon={faClock} />
-                      <span className='ml-2 text-sm'>{date}</span>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            );
-          })}
-          <div className='paddingy text-tertiary'>
-            <h1 className='text-3xl font-bold md:text-4xl text-primary'>
-              Category
-            </h1>
-            <Link href='/'>
-              <a className='flex items-center mt-2'>
-                <FontAwesomeIcon
-                  icon={faLongArrowAltRight}
-                  className='text-[#AAAAAA] mr-2'
-                />
-                <h3 className='text-lg font-bold '>Tips</h3>
-              </a>
-            </Link>
-            <Link href='/'>
-              <a className='flex items-center mt-2'>
-                <FontAwesomeIcon
-                  icon={faLongArrowAltRight}
-                  className='text-[#AAAAAA] mr-2'
-                />
-                <h3 className='text-lg font-bold '>News</h3>
-              </a>
-            </Link>
-            <Link href='/'>
-              <a className='flex items-center mt-2'>
-                <FontAwesomeIcon
-                  icon={faLongArrowAltRight}
-                  className='text-[#AAAAAA] mr-2'
-                />
-                <h3 className='text-lg font-bold '>Medicine</h3>
-              </a>
-            </Link>
-          </div>
+        <div className='lg:col-span-1 padding paddingy text-tertiary'>
+          <FeaturedNews data={data} />
+          <Categories />
         </div>
-      </div>
+      </main>
     </Layout>
   );
 };
 
 export default News;
+
+export const getStaticProps = async () => {
+  const data = await getAllNews();
+  return {
+    props: { data },
+  };
+};

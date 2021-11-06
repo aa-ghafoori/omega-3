@@ -11,7 +11,7 @@ import Button from './ui/Button';
 function AboutUs() {
   return (
     <div className='responsive padding py-16 text-primary flex flex-col justify-center lg:flex-row-reverse'>
-      <Image src={greenOmega} objectFit='contain' />
+      <Image src={greenOmega} objectFit='contain' priority />
       <div className='lg:mr-20 lg:flex-auto'>
         <span className='inline-flex items-center justify-center px-3 py-2 font-bold leading-none text-red-500 bg-red-100 rounded my-8 border-red-500 border text-lg'>
           NEW

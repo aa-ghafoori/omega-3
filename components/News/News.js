@@ -4,12 +4,12 @@ import NewsCard from './NewsCard';
 const News = ({ data }) => {
   return (
     <div className='responsive padding paddingy text-tertiary'>
-      <h3 className='text-secondary mb-10 font-bold'>News</h3>
+      <h2 className='text-secondary mb-10 font-bold'>News</h2>
       <div className='md:grid md:grid-cols-2 items-start justify-items-end'>
         <div>
-          <h1 className='text-3xl font-bold md:text-5xl text-primary'>
+          <h2 className='text-3xl font-bold md:text-5xl text-primary'>
             Tips & Article
-          </h1>
+          </h2>
           <p className='my-8 text-[#AAAAAA]'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
             officiis maxime aliquam facere, perferendis earum et suscipit id
@@ -31,7 +31,7 @@ const News = ({ data }) => {
               category={news.categories[0].name}
               title={news.title}
               text={news.body.slice(0, 100) + '...'}
-              imageUrl={'https://res.cloudinary.com/dly5b3ny0/image/upload/v1635931903/green_lfnu3m.png'}
+              imageUrl={news.image.url}
             />
           );
         })}

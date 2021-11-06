@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center '>
       <div className='absolute h-full w-full z-[-10]'>
-        <Image src={omegaImage} objectFit='cover' layout='fill' />
+        <Image src={omegaImage} objectFit='cover' layout='fill' priority />
       </div>
       <div className='responsive padding pt-60 pb-40 md:max-w-2xl lg:max-w-4xl'>
         <h1 className='text-4xl font-bold capitalize md:text-6xl'>

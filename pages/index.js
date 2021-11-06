@@ -6,18 +6,32 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import Faq from '../components/Faq/Faq';
 import News from '../components/News/News';
 import Layout from '../components/ui/Layout';
-import axios from 'axios';
 import markdownToHtml from '../lib/markdownToHtml';
+import { getAllNews, getFaq } from '../lib/api';
+
+export default function Home({ newsData, faqData }) {
+  return (
+    <Layout>
+      <main>
+        <AboutUs />
+        <Info />
+        <WhyUs />
+        <Products />
+        <Testimonial />
+        <News data={newsData} />
+        <Faq data={faqData} />
+      </main>
+    </Layout>
+  );
+}
 
 export const getStaticProps = async () => {
-  const res = await axios.get(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/news');
-  const newsData = res.data;
+  const newsData = await getAllNews();
 
-  const res2 = await axios.get(
-    process.env.NEXT_PUBLIC_STRAPI_API_URL + '/faqs'
-  );
+  let faq = await getFaq();
+
   const faqData = await Promise.all(
-    res2.data.map(async question => {
+    faq.map(async question => {
       const parsed = await markdownToHtml(question.answer);
       const newQ = { ...question };
       newQ.answer = parsed;
@@ -29,17 +43,3 @@ export const getStaticProps = async () => {
     props: { newsData, faqData },
   };
 };
-
-export default function Home({ newsData, faqData }) {
-  return (
-    <Layout>
-      <AboutUs />
-      <Info />
-      <WhyUs />
-      <Products />
-      <Testimonial />
-      <News data={newsData} />
-      <Faq data={faqData} />
-    </Layout>
-  );
-}

@@ -3,10 +3,10 @@ import Question from './Question';
 const Faq = ({ data }) => {
   return (
     <div className='responsive padding paddingy text-center'>
-      <h3 className='text-secondary mb-10 font-bold '>FAQ</h3>
-      <h1 className='text-3xl font-bold text-primary md:text-5xl'>
+      <h2 className='text-secondary mb-10 font-bold '>FAQ</h2>
+      <h2 className='text-3xl font-bold text-primary md:text-5xl'>
         Frequently Asked Questions
-      </h1>
+      </h2>
       <p className='my-8 text-[#AAAAAA] max-w-xl m-auto'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae culpa
         consequuntur dicta exercitationem praesentium nemo non, nam sint maiores

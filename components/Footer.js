@@ -11,17 +11,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <div className='bg-primary'>
+    <footer className='bg-primary'>
       <div className='responsive padding paddingy text-white'>
-        <div className='md:grid md:grid-cols-3 gap-x-20'>
+        <div className='md:grid md:grid-cols-3 gap-x-20 justify-items-center'>
           <div className='md:col-span-1 lg:col-span-1'>
-            <div className='relative w-40 h-16 lg:w-40'>
-              <Link href='/'>
-                <a>
+            <Link href='/'>
+              <a>
+                <div className='relative w-40 h-16 lg:w-40'>
                   <Image layout='fill' src={logoWhite} objectFit='contain' />
-                </a>
-              </Link>
-            </div>
+                </div>
+              </a>
+            </Link>
             <p className='my-4'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
               recusandae!
@@ -81,12 +81,10 @@ const Footer = () => {
           </div>
         </div>
         <div className='py-8 mt-14 border-[#bbbbbb7e] border-t-[1px] text-sm '>
-          <span className='my-4'>
-          Copyright © 2021. All rights reserved.
-          </span>
+          <span className='my-4'>Copyright © 2021. All rights reserved.</span>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

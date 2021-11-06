@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Principles = () => {
   return (
-    <div className='padding paddingy text-tertiary responsive'>
-      <h3 className='text-secondary my-10 font-bold'>Our Principles</h3>
+    <article className='padding paddingy text-tertiary responsive'>
+      <h2 className='text-secondary my-10 font-bold'>Our Principles</h2>
       <h3 className='text-2xl my-4 font-bold'>1. Fresh Algea Oil</h3>
       <p className='mb-8'>
         Our plant-based Omega-3 products are made from algae. Algae are
@@ -19,9 +19,13 @@ const Principles = () => {
         All our vegetable products bear the VEGAN quality mark. With this we
         guarantee 100% that no fish oil has been used.
         <br /> <br />
-        <div className='w-20'>
-          <Image src={veganImage} /> <br /> <br />
-        </div>
+        <Image
+          src={veganImage}
+          width={80}
+          height={100}
+          alt='VEGAN quality mark'
+        />{' '}
+        <br /> <br />
         <Link href='/'>
           <a className='underline'>
             Read more about our <em>'Fresh'</em> method.
@@ -39,16 +43,20 @@ const Principles = () => {
         <br />
         All our fish products come from sustainable fisheries and carry the
         Marine Stewardship Council (MSC) quality mark. <br /> <br />
-        <div>
-          <Image src={mscImage} /> <br /> <br />
-        </div>
+        <span>
+          <Image
+            src={mscImage}
+            alt='Marine Stewardship Council (MSC) quality mark'
+          />{' '}
+          <br /> <br />
+        </span>
         <Link href='/'>
           <a className='underline'>
             Read more about our <em>'Clean'</em> method.
           </a>
         </Link>
       </p>
-    </div>
+    </article>
   );
 };
 
