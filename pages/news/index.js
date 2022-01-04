@@ -23,7 +23,7 @@ const News = ({ data }) => {
       />
       <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
         <div className='absolute h-full w-full z-[-10]'>
-          <Image src={omegaImage} objectFit='cover' layout='fill' priority/>
+          <Image src={omegaImage} objectFit='cover' layout='fill' priority />
         </div>
         <div className='responsive padding pt-60 pb-40 md:max-w-2xl lg:max-w-4xl m-auto'>
           <h1 className='text-4xl font-bold capitalize md:text-6xl'>News</h1>
@@ -61,7 +61,7 @@ const News = ({ data }) => {
 export default News;
 
 export const getStaticProps = async () => {
-  const data = await getAllNews();
+  const data = (await getAllNews()) || [];
   return {
     props: { data },
   };

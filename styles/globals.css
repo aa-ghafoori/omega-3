@@ -1,20 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --color-primary: #598050;
+  --color-secondary: #155765;
+  --color-tertiary: #4D2C3D;
+} */
+:root {
+  --color-primary: #416444;
   --color-secondary: #ffc53c;
   --color-tertiary: #06453a;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 * {
@@ -30,7 +35,7 @@ body {
 }
 
 .responsive {
-  @apply max-w-7xl lg:m-auto;
+  @apply max-w-[100rem] lg:m-auto;
 }
 
 .padding {
@@ -38,7 +43,7 @@ body {
 }
 
 .paddingy {
-  @apply py-10;
+  @apply py-20;
 }
 
 .no-scroll {

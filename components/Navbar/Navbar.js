@@ -1,4 +1,4 @@
-import logoWhite from '../../images/logo - white.svg';
+import logo from '../../images/logo2.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,23 +14,15 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-primary text-white padding h-screen w-11/12 shadow-md fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out lg:hidden
+      className={`bg-primary text-white padding py-6 h-screen w-11/12 shadow-md fixed top-0 left-0 z-20 transition transform duration-500 ease-in-out lg:hidden
         ${!state.navOpen ? '-translate-x-full' : 'translate-x-0'}
     `}
     >
       <div className='flex justify-between items-center'>
         <Link href='/'>
           <a>
-            <div
-              className='relative w-40 h-16 lg:w-40'
-              onClick={navClickHandler}
-            >
-              <Image
-                layout='fill'
-                src={logoWhite}
-                objectFit='contain'
-                alt='Arctic Blue Logo'
-              />
+            <div className='relative h-8 w-32' onClick={navClickHandler}>
+              <Image layout='fill' src={logo} alt='Arctic Blue Logo' />
             </div>
           </a>
         </Link>
@@ -40,7 +32,7 @@ const Navbar = () => {
           className='cursor-pointer hover-item'
         />
       </div>
-      <nav className='flex flex-col'>
+      <nav className='flex flex-col uppercase tracking-widest'>
         <Link href='/'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
@@ -54,7 +46,7 @@ const Navbar = () => {
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}
           >
-            About Us
+            About
           </a>
         </Link>
         <Link href='/news'>
@@ -62,7 +54,15 @@ const Navbar = () => {
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}
           >
-            News
+            Blog
+          </a>
+        </Link>
+        <Link href='/news'>
+          <a
+            className='mt-4 text-sm hover-item w-[fit-content]'
+            onClick={navClickHandler}
+          >
+            Beste visolie
           </a>
         </Link>
       </nav>

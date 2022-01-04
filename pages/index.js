@@ -1,43 +1,40 @@
-import Info from '../components/Info';
-import AboutUs from '../components/AboutUs';
-import WhyUs from '../components/WhyUs';
-import Products from '../components/Products/Products';
-import Testimonial from '../components/Testimonial/Testimonial';
-import Faq from '../components/Faq/Faq';
-import News from '../components/News/News';
 import Layout from '../components/ui/Layout';
 import markdownToHtml from '../lib/markdownToHtml';
 import { getAllNews, getFaq } from '../lib/api';
+import Hero from '../components/revised/Hero';
+import Info from '../components/revised/Info';
+import Info2 from '../components/revised/Info2';
+import Products from '../components/revised/Product/Products';
+import Email from '../components/revised/Email';
 
 export default function Home({ newsData, faqData }) {
   return (
     <Layout>
       <main>
-        <AboutUs />
+        <Hero />
         <Info />
-        <WhyUs />
+        <Info2 />
         <Products />
-        <Testimonial />
-        <News data={newsData} />
-        <Faq data={faqData} />
+        <Email />
       </main>
     </Layout>
   );
 }
 
 export const getStaticProps = async () => {
-  const newsData = await getAllNews();
+  const newsData = (await getAllNews()) || [];
 
   let faq = await getFaq();
 
-  const faqData = await Promise.all(
-    faq.map(async question => {
-      const parsed = await markdownToHtml(question.answer);
-      const newQ = { ...question };
-      newQ.answer = parsed;
-      return newQ;
-    })
-  );
+  const faqData =
+    (await Promise.all(
+      faq?.map(async question => {
+        const parsed = await markdownToHtml(question.answer);
+        const newQ = { ...question };
+        newQ.answer = parsed;
+        return newQ;
+      })
+    )) || [];
 
   return {
     props: { newsData, faqData },
