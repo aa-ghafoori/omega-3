@@ -10,7 +10,7 @@ const Info2 = () => {
           <h2 className='text-[40px] font-bold mb-10 text-primary'>
             Onze vergelijker
           </h2>
-          <p className='text-xl'>
+          <p className='text-xl font-light'>
             Wat is nu het beste visolie supplement? In dit artikel vergelijken
             we de vijf meest verkochte Omega-3 supplementen. Wij kijken hierbij
             naar verschillende factoren. Denk dan aan de prijs van het

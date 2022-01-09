@@ -15,7 +15,7 @@ export default function Home({ newsData, faqData }) {
         <Info />
         <Info2 />
         <Products />
-        <Email />
+        {/* <Email /> */}
       </main>
     </Layout>
   );

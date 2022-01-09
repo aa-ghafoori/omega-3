@@ -94,113 +94,113 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className='padding paddingy '>
+    <div className='padding paddingy bg-[#e7e6e4] '>
       <div className='responsive text-center lg:text-left lg:grid grid-cols-3 justify-items-center'>
-        <div className='text-xl mb-24 lg:mb-0'>
-          <p className='text-4xl text-primary font-bold mb-8'>Producten</p>
-          <div className='flex flex-col mb-8'>
+        <div className='text-xl mb-24  lg:mb-0'>
+          <p className='text-[40px] text-primary font-bold mb-8'>Producten</p>
+          <div className='flex flex-col mb-8 font-light'>
             <h3 className='text-xl font-bold'>Visolie</h3>
             <Link href='/'>
-              <a className='inline-block'>Visolie capsules</a>
+              <a className='inline-block mt-2'>Visolie capsules</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Visolie vloeibaar</a>
+              <a className='inline-block mt-2'>Visolie vloeibaar</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Visolie voor kinderen</a>
+              <a className='inline-block mt-2'>Visolie voor kinderen</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Visolie voor dieren</a>
+              <a className='inline-block mt-2'>Visolie voor dieren</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Alle visolie producten</a>
+              <a className='inline-block mt-2'>Alle visolie producten</a>
             </Link>
           </div>
-          <div className='flex flex-col mb-8'>
+          <div className='flex flex-col mb-8 font-light'>
             <h3 className='text-xl font-bold'>Algenolie</h3>
             <Link href='/'>
-              <a className='inline-block'>Algenolie capsules</a>
+              <a className='inline-block mt-2'>Algenolie capsules</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Algenolie vloeibaar</a>
+              <a className='inline-block mt-2'>Algenolie vloeibaar</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Alle algenolie producten</a>
+              <a className='inline-block mt-2'>Alle algenolie producten</a>
             </Link>
           </div>
-          <div className='flex flex-col mb-8'>
+          <div className='flex flex-col mb-8 font-light'>
             <h3 className='text-xl font-bold'>Omega 3</h3>
             <Link href='/'>
-              <a className='inline-block'>Omega-3 capsules</a>
+              <a className='inline-block mt-2'>Omega-3 capsules</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Omega-3 vloeibaar</a>
+              <a className='inline-block mt-2'>Omega-3 vloeibaar</a>
             </Link>
             <Link href='/'>
-              <a className='inline-block'>Alle omega-3 producten</a>
+              <a className='inline-block mt-2'>Alle omega-3 producten</a>
             </Link>
           </div>
         </div>
         <div className='mb-24 lg:mb-0'>
-          <h3 className='text-4xl text-primary font-bold mb-8'>Over ons</h3>
-          <div className='flex flex-col mb-8'>
+          <h3 className='text-[40px] text-primary font-bold mb-8'>Over ons</h3>
+          <div className='flex flex-col mb-8 font-light '>
             <Link href='/'>
-              <a className='text-xl font-bold'>Over ons</a>
+              <a className='text-xl inline-block mt-2'>Over ons</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Onze missie</a>
+              <a className='text-xl inline-block mt-2'>Onze missie</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Over Seaspiracy</a>
+              <a className='text-xl inline-block mt-2'>Over Seaspiracy</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Onze principes</a>
+              <a className='text-xl inline-block mt-2'>Onze principes</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Ons MSC keurmerk</a>
+              <a className='text-xl inline-block mt-2'>Ons MSC keurmerk</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Onze Oxidatie</a>
+              <a className='text-xl inline-block mt-2'>Onze Oxidatie</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Affiliate worden</a>
+              <a className='text-xl inline-block mt-2'>Affiliate worden</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Zakelijk / B2B</a>
+              <a className='text-xl inline-block mt-2'>Zakelijk / B2B</a>
             </Link>
           </div>
         </div>
-        <div>
-          <h3 className='text-4xl text-primary font-bold mb-8'>
+        <div className=''>
+          <h3 className='text-[40px] text-primary font-bold mb-8'>
             Klantenservice
           </h3>
-          <div className='flex flex-col mb-8'>
+          <div className='flex flex-col mb-8 font-light '>
             <Link href='/'>
-              <a className='text-xl font-bold'>Antwoord op alle vragen</a>
+              <a className='text-xl inline-block mt-2'>Antwoord op alle vragen</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Top 5 gestelde vragen</a>
+              <a className='text-xl inline-block mt-2'>Top 5 gestelde vragen</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Levertijd vragen</a>
+              <a className='text-xl inline-block mt-2'>Levertijd vragen</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl font-bold'>Verzendkosten vragen</a>
+              <a className='text-xl inline-block mt-2'>Verzendkosten vragen</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl'>Cookies</a>
+              <a className='text-xl inline-block mt-2'>Cookies</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl'>Algemene voorwaarden</a>
+              <a className='text-xl inline-block mt-2'>Algemene voorwaarden</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl'>Privacy Policy</a>
+              <a className='text-xl inline-block mt-2'>Privacy Policy</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl'>Disclaimer</a>
+              <a className='text-xl inline-block mt-2'>Disclaimer</a>
             </Link>
             <Link href='/'>
-              <a className='text-xl'>100%-Geen-Op-Boer-Garantie</a>
+              <a className='text-xl inline-block mt-2'>100%-Geen-Op-Boer-Garantie</a>
             </Link>
           </div>
         </div>
