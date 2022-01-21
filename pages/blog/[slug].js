@@ -13,7 +13,7 @@ import Comment from '../../components/Comment';
 import { getAllNews } from '../../lib/api';
 import { getDate } from '../../lib/getDate';
 import { slugify } from '../../lib/titleToSlug';
-import FeaturedNews from '../../components/blog/FeaturedNews';
+import FeaturedNews from '../../components/News/FeaturedNews';
 import Categories from '../../components/Categories';
 import { NewsArticleJsonLd, NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
