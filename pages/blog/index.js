@@ -1,9 +1,9 @@
 // import Layout from '../../components/ui/Layout';
 // import omegaImage from '../../images/vitd.png';
 // import Image from 'next/image';
-// import NewsCard from '../../components/blog/blogCard';
+// import NewsCard from '../../components/news/NewsCard';
 // import { getAllNews } from '../../lib/api';
-// import FeaturedNews from '../../components/blog/FeaturedNews';
+// import FeaturedNews from '../../components/News/FeaturedNews';
 // import Categories from '../../components/Categories';
 // import { NextSeo } from 'next-seo';
 
@@ -13,9 +13,9 @@
 //       <NextSeo
 //         title='News - Arctic Blue'
 //         description='Arctic Blue levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.'
-//         canonical='omega-3.vercel.app/blog'
+//         canonical='omega-3.vercel.app/news'
 //         openGraph={{
-//           url: 'omega-3.vercel.app/blog',
+//           url: 'omega-3.vercel.app/news',
 //           title: 'News - Arctic Blue',
 //           description:
 //             'Arctic Blue levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.',
