@@ -19,7 +19,7 @@ const NewsCard = ({ imageUrl, category, title, text, id }) => {
       <p className={`text-[#AAAAAA] ${imageUrl === null ? 'mb-2' : 'mb-6'}`}>
         {text}
       </p>
-      <Link href={'/news/' + slugify(title)}>
+      <Link href={'/blog/' + slugify(title)}>
         <a className='flex items-center hover-item'>
           <span className='mr-2'>Read More</span>
           <FontAwesomeIcon className='text-lg' icon={faLongArrowAltRight} />

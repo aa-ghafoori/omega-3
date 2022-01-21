@@ -13,7 +13,7 @@ import Comment from '../../components/Comment';
 import { getAllNews } from '../../lib/api';
 import { getDate } from '../../lib/getDate';
 import { slugify } from '../../lib/titleToSlug';
-import FeaturedNews from '../../components/News/FeaturedNews';
+import FeaturedNews from '../../components/blog/FeaturedNews';
 import Categories from '../../components/Categories';
 import { NewsArticleJsonLd, NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
@@ -42,9 +42,9 @@ const SingleNews = ({ singleNews, data }) => {
           <NextSeo
             title={singleNews.title}
             description={singleNews.description}
-            canonical={'omega-3.vercel.app/news/' + slugify(singleNews.title)}
+            canonical={'omega-3.vercel.app/blog/' + slugify(singleNews.title)}
             openGraph={{
-              url: 'omega-3.vercel.app/news/' + slugify(singleNews.title),
+              url: 'omega-3.vercel.app/blog/' + slugify(singleNews.title),
               title: singleNews.title,
               description: singleNews.description,
               images: [
@@ -58,7 +58,7 @@ const SingleNews = ({ singleNews, data }) => {
             }}
           />
           <NewsArticleJsonLd
-            url={'omega-3.vercel.app/news/' + slugify(singleNews.title)}
+            url={'omega-3.vercel.app/blog/' + slugify(singleNews.title)}
             title={singleNews.title}
             images={[singleNews.image.url]}
             section={singleNews.categories[0].name}

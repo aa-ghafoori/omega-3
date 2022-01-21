@@ -1,5 +1,5 @@
 import Button from '../ui/Button';
-import NewsCard from './NewsCard';
+import NewsCard from './blogCard';
 
 const News = ({ data }) => {
   return (

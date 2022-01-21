@@ -11,7 +11,7 @@ const Product = ({
   info3,
 }) => {
   return (
-    <div className='flex flex-col max-w-[400px] rounded-2xlitems-center lg:items-start'>
+    <div className='flex flex-col max-w-[400px] rounded-2xl items-center lg:items-start pt-20'>
       <div className='relative w-20 h-36 lg:w-40 lg:h-72 self-center mb-10 lg:mb-20'>
         <Image
           src={productImage}
@@ -22,7 +22,7 @@ const Product = ({
         />
       </div>
       <div className='bg-[#f4f1f1] px-6 py-10 rounded-2xl'>
-        <div className='mb-10 self-center flex-grow text-xl text-center lg:text-left '>
+        <div className='mb-10 self-center flex-grow text-xl lg:text-left '>
           <h3 className='mb-2 text-[#416444] font-bold lg:text-[27px]'>
             {productName}
           </h3>

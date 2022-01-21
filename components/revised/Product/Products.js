@@ -12,8 +12,8 @@ const Products = () => {
           alt='Holland & Barrett Kids'
           productName='Holland & Barrett Kids'
           description='Multivitamine + Omega 3 (30 Gummies)'
-          info1='Lekkere smaak'
-          info2='Lekkere smaak'
+          info1='Aangename smaak'
+          info2='Geen nasmaak'
           info3='Bevat ook vitaminen en mineralen'
         />
         <Product

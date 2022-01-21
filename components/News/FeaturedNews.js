@@ -14,7 +14,7 @@ const FeaturedNews = ({ data }) => {
       {data.slice(3).map(news => {
         const date = getDate(news.published_at);
         return (
-          <Link href={'/news/' + slugify(news.title)} key={news.id}>
+          <Link href={'/blog/' + slugify(news.title)} key={news.id}>
             <a>
               <div className='mt-4'>
                 <h3 className='text-lg font-bold '>{news.title}</h3>

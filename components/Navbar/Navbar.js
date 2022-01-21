@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center'>
         <Link href='/'>
-          <a>
+          <a className='inline-block py-2'>
             <div className='relative h-8 w-32' onClick={navClickHandler}>
               <Image layout='fill' src={logo} alt='Arctic Blue Logo' />
             </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
             About
           </a>
         </Link>
-        <Link href='/news'>
+        <Link href='/blog'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}
@@ -57,7 +57,7 @@ const Navbar = () => {
             Blog
           </a>
         </Link>
-        <Link href='/news'>
+        <Link href='/blog'>
           <a
             className='mt-4 text-sm hover-item w-[fit-content]'
             onClick={navClickHandler}

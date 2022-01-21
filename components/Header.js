@@ -14,7 +14,7 @@ const Header = () => {
   };
   return (
     <header className='fixed top-0 left-0 w-full z-20 bg-white shadow-md'>
-      <nav className='responsive flex justify-between items-center px-4 py-2'>
+      <nav className='responsive flex justify-between items-center px-4 py-2 lg:py-6'>
         <Link href='/'>
           <a>
             <div className='relative h-8 w-32 lg:h-16 lg:w-64'>
@@ -36,10 +36,10 @@ const Header = () => {
           <Link href='/about'>
             <a className='text-lg hover-item mx-20'>About</a>
           </Link>
-          <Link href='/news'>
+          <Link href='/blog'>
             <a className='text-lg hover-item mr-20'>Blog</a>
           </Link>
-          <Link href='/news'>
+          <Link href='/blog'>
             <a className='text-lg hover-item'>Beste visolie</a>
           </Link>
         </div>

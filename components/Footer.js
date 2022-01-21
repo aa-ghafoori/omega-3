@@ -59,7 +59,7 @@
 //                 About Us
 //               </a>
 //             </Link>
-//             <Link href='/news'>
+//             <Link href='/blog'>
 //               <a className='mt-2 text-sm hover-item w-[fit-content]'>News</a>
 //             </Link>
 //           </div>
@@ -95,7 +95,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div className='padding paddingy bg-[#e7e6e4] '>
-      <div className='responsive text-center lg:text-left lg:grid grid-cols-3 justify-items-center'>
+      <div className='responsive lg:grid grid-cols-3 justify-items-center'>
         <div className='text-xl mb-24  lg:mb-0'>
           <p className='text-[40px] text-primary font-bold mb-8'>Producten</p>
           <div className='flex flex-col mb-8 font-light'>
