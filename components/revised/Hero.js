@@ -6,7 +6,12 @@ const Hero = () => {
   return (
     <div className='relative tracking-wider'>
       <div className='absolute h-full w-full z-[-10]'>
-        <Image src={heroImage} objectFit='cover' layout='fill' />
+        <Image
+          src={heroImage}
+          objectFit='cover'
+          layout='fill'
+          alt='Omega-3 Visolie'
+        />
       </div>
       <div className='responsive'>
         <div className='padding pt-28 lg:pt-60 pb-40 md:max-w-xl lg:max-w-2xl'>

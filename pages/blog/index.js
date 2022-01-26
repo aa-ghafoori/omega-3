@@ -74,6 +74,18 @@ import heroImage from '../../images/Layer 3.png';
 const Blog = () => {
   return (
     <Layout>
+      <NextSeo
+        title='Blog - Beste Visolie'
+        description='Beste Visolie levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.'
+        canonical='omega-3.vercel.app/blog'
+        openGraph={{
+          url: 'omega-3.vercel.app/blog',
+          title: 'Blog - Beste Visolie',
+          description:
+            'Beste Visolie levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.',
+        }}
+      />
+
       <main>
         <div className='relative tracking-wider'>
           <div className='absolute h-full w-full z-[-10]'>

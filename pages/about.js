@@ -20,7 +20,7 @@ const About = () => {
             'Arctic Blue levert zuiver en pure omega-3 met VEGAN en MSC-keurmerken. De belangrijkste omega-3 vetzuren voor hart, hersenen en gezichtsvermogen.',
         }}
       />
-      <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
+      {/* <div className='relative bg-gradient-to-r from-primary to-[#05453a7c] text-white flex items-center'>
         <div className='absolute h-full w-full z-[-10]'>
           <Image src={omegaImage} objectFit='cover' layout='fill' priority/>
         </div>
@@ -38,7 +38,8 @@ const About = () => {
         <AboutMain />
         <Principles />
         <WhyUs />
-      </main>
+      </main> */}
+      <h1 className='py-60 text-5xl text-center'>Comming Soon ...</h1>
     </Layout>
   );
 };
