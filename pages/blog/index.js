@@ -70,6 +70,7 @@
 import Image from 'next/image';
 import Layout from '../../components/ui/Layout';
 import heroImage from '../../images/Layer 3.png';
+import { NextSeo } from 'next-seo';
 
 const Blog = () => {
   return (
